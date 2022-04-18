@@ -1,0 +1,5 @@
+#!/bin/zsh
+echo $(
+  docker container list --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}" | tail -n +2 | \
+    fzf --ansi --no-sort --tiebreak=index --bind=ctrl-s:toggle-sort --query=$1 \
+  ) | head -n1 | awk '{print $1;}'

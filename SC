@@ -1,0 +1,5 @@
+#!/bin/zsh
+SC_HOME=$HOME/projects/sc/ecosystem
+cd $SC_HOME && nvim -c SC $SC_HOME 
+
+

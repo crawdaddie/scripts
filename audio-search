@@ -1,0 +1,2 @@
+#!/bin/zsh
+fzf --preview='ffplay -nodisp -vn {} &'

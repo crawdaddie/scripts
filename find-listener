@@ -1,0 +1,3 @@
+#!/bin/zsh
+sudo lsof -i -nP | grep $1
+

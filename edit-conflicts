@@ -1,0 +1,2 @@
+#!/bin/zsh
+nvim $(git diff --name-only --diff-filter=U | fzf --ansi --preview 'bat --style=numbers --color=always {}')
